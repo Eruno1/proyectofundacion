@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación BAF</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="stylesheet" href="./Style/menutoggler.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menuinicio">
+        <a href="./index.html"
+          ><img
+            src="./images/BAF_Fundacion_Blanco2.png"
+            alt="logobaf"
+            srcset=""
+            class="menuinicio__logo"
+          ></img></a>
+        <!-- <a href="#" class="menuinicio__closeicon">
+            <span class="jam jam-menu"></span>
+        </a>   -->
+        
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Info</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+            </ul>
+          </div>
+        
+        <ul class="menuinicio__links">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./pages/quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="./pages/proyectos.html">Proyectos</a></li>
+          <li><a href="./pages/donar.html">Donar</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="imagenfondo">
+          <div class="imagenfondo__bloque">
+            <h1 class="imagenfondo__titulo">Fundación BAF</h1>
+            <p class="imagenfondo__texto">
+            Somos la respuesta al deseo de los miembros de BAF Capital de asumir
+            nuestra responsabilidad como compañía y de ayudar a quienes más lo
+            necesitan
+            </p>
+            <a class="imagenfondo__boton" href="./pages/proyectos.html">¡Descubrí nuestros proyectos!</a>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="informacionfooter">
+        <div class="informacionfooter__direccion"><h4>Juana Manso 999,
+          4to. Piso -Torre Norte,
+          C.A.B.A. - Argentina</h4>
+        </div>
+        <div class="informacionfooter_logo">
+          <img src="./images/BAF_Fundacion_Blanco2.png" alt="logobaf" class="logo">
+        </div>
+        <div class="informacionfooter__redes">
+          <a href="https://www.facebook.com/fundacionbaf/" target="_blank"><i class="fa-brands fa-facebook-square informacionfooter__redes informacionfooter__redes--fb"></i></a>
+          <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram informacionfooter__redes informacionfooter__redes--ig"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-linkedin informacionfooter__redes informacionfooter__redes--linkedin"></i></a>
+        </div>
+      </div>
+      <div class="derechosreservados">
+        <h4>© 2022 Fundacón BAF, Todos los derechos reservados</h4>
+      </div>   
+    </footer>
+  </body>
+</html>
