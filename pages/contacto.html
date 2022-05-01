@@ -16,40 +16,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header> 
+    <header>
         <nav class="menuinicio">
             <a href="../index.html"
-              ><img
+            ><img
                 src="../images/BAF_Fundacion_Blanco2.png"
                 alt="logobaf"
                 srcset=""
                 class="menuinicio__logo"
-              ></img></a>
+            ></img></a>
+            <a href="#" class="menuinicio__closeicon">
+                <span class="jam jam-menu"></span>
+            </a>  
             <ul class="menuinicio__links">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./quienes-somos.html">Quiénes somos</a></li>
-              <li><a href="./proyectos.html">Proyectos</a></li>
-              <li><a href="./donar.html">Donar</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./donar.html">Donar</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                
             </ul>
-      </nav>
+        </nav>
     </header>
     <main class="moverformulario">
         <section class="formulario__wrap">
             <div class="formulario__seccion1">
                 <h3 class="subtitulo">¡Contactate con nosotros!</h3>
                 <form action="" class="formulario__contenedor">
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="nombre"></label>
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="formulario__campos">
                     </div>
         
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="Apellido"></label>
                         <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" class="formulario__campos">
                     </div>
 
-                    <div>
+                    <div class="formulario__whitebox">
                         <select name="sexo" id="sexo-select" class="formulario__selector">
                             <option value="">Seleccione la opcion correcta</option>
                             <option value="dog">Masculino</option>
@@ -58,22 +62,22 @@
                         </select>
                     </div>
             
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="edad"></label>
                         <input type="text" id="edad" name="edad" placeholder="Fecha de nacimiento" class="formulario__campos">
                     </div>
             
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="correo"></label>
                         <input type="email" id="correo" name="correo" placeholder="Ingresar su email"  class="formulario__campos">
                     </div>
             
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="clave"></label>
                         <input type="text" id="clave" name="clave" placeholder="Ingresar el nombre de su proyecto" class="formulario__campos">
                     </div>
             
-                    <div>
+                    <div class="formulario__whitebox">
                         <label for="descripcion"></label>
                         <input type="text" id="descripcion" name="descripcion" placeholder="Ingresar breve descripcion" class="formulario__campos"> 
                     </div>

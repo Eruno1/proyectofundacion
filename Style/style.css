@@ -9,16 +9,13 @@
 body {
   position: relative;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* padding-top: 60px; */
 
   background-color: #151D25;
 }
 
 .menuinicio {
-  position: fixed;
-  top: 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,13 +73,14 @@ body {
   align-items: center;
 
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* margin-top: 150px; */
   /* background-color: red; */
 
   /* background-color: red; */
   background-image: url('../images/fondo.svg');
   background-repeat: no-repeat;
+  background-position: center;
 
   color: white;
 
@@ -94,7 +92,8 @@ body {
   /* justify-content: center; */
   width: 100%;
   /* text-align: center; */
-  padding-bottom: 300px;
+
+  padding: 200px 0px;
 }
 
 .imagenfondo .imagenfondo__titulo {
@@ -152,9 +151,6 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
-
   width: 100%;
   background-color: rgb(25, 25, 25);
 
@@ -258,7 +254,7 @@ footer {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 60px;
+  margin: 60px 10px;
 }
 
 .formulario__wrap {
@@ -280,6 +276,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 10px;
 
   height: 90%;
 }
@@ -388,20 +385,14 @@ footer {
   background-color: rgba(0, 0, 0, .2);
   background-image: url('https://picsum.photos/id/866/1920/1080');
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
-  /* opacity: 0.5; */
-  height: 100vh;
   background-attachment: fixed;
-  margin-top: 60px;
 }
 
 .quienessomos__contenedor {
-  max-width: 70%;
-  height: 1050px;
-  max-height: 700px;
-
-  background-color: rgba(0, 0, 0, .2);
-  margin-bottom: 210px;
-  padding: 0px 50px;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 100px 200px 100px;
+  padding: 0px 50px 50px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -440,11 +431,12 @@ footer {
     justify-content: center;
     min-height: 650px;
     align-items: center;
+    margin: 100px 0px;
 
 }
   
 .card {
-    margin: 40px;
+    margin: 40px 60px;
     position: relative;
     max-width: 250px;
     max-height: 350px;
@@ -501,8 +493,7 @@ footer {
 .donarcontenedor {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+    margin: 100px 20px;
 }
 
 .donarcontenedor__tarjeta {
@@ -536,11 +527,6 @@ footer {
 }
 
 .donarcontenedor__tarjeta--imagen {
-    height: 85%;
-    width: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
     border: none;
     border-radius: 8px;
     display: flex;
@@ -551,6 +537,8 @@ footer {
     justify-content: center;
     background-color: white;
     border-radius: 10px;
+    max-width: 100%;
+    margin: 0px 20px;
 }
 
 .donarcontenedor__mercadopago {
@@ -592,6 +580,37 @@ footer {
   display: none;
 }
 
+@media screen and (max-width: 1025px) {
+  .quienessomos__contenedor {
+    margin: 50px 50px 50px;
+    
+}
+  
+}
+
+@media screen and (max-width: 901px) {
+  .donarcontentedor__contenedortarjeta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 0px;
+  }
+  .donarcontenedor__tarjeta {
+    margin: 20px 0px;
+  
+  }
+  
+  .donarcontentedor__fondo {
+    margin: 0px 100px;
+    background-color: transparent;
+  }
+  
+  .donarcontenedor__mercadopago {
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 601px) {
   
   html, body {
@@ -600,7 +619,8 @@ footer {
   body {
     position: relative
   }
-  
+
+  /* Header start */
   .menuinicio__links {
     display: none;
   }
@@ -612,23 +632,32 @@ footer {
     font-size: 35px;
     margin-right: 15px;
   }
+/* header End */
 
+/* Index start */
 
 
   .imagenfondo {
-    height: 500px;
     background-position: center;
-    margin: 100px 0px 0px 0px;
   }
   
+  .imagenfondo__titulo {
+    /* width: 100%; */
+    font-size: 30px !important;
+  }
+
   .imagenfondo__texto {
     width: 100%;
-    padding: 0px 20px 50px;
+    padding: 0 10px;
   }
 
   .imagenfondocontacto {
     display: none;
   }
+
+/* Index End */
+
+/* Contacto start */
 
   .formulario__seccion1 {
     width: 100%;
@@ -638,34 +667,70 @@ footer {
   }
 
   .formulario__wrap{
-    margin: 60px 100px;
+    margin: 60px 20px;
     background-image: url('https://picsum.photos/seed/picsum/524/600');
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background-size: cover;
+
   }
 
   .formulario__contenedor {
-    width: 100%
+    width: 100%;
+    /* margin-right: 0; */
+    text-align: center;
   }
 
   .subtitulo {
     color: white;
   }
 
-  .informacionfooter {
+  .formulario__whitebox{
+    margin: 0px 10px 0 0;
+  }
+
+/* contacto End */
+
+/* Footer Start */
+
+.informacionfooter {
     flex-direction: column;
   }
 
-  .informacionfooter_logo {
+.informacionfooter_logo {
     margin: 20px 0px;
   }
   
-  .informacionfooter__redes{
+.informacionfooter__redes{
     justify-content: center;
     /* margin-top: 20px; */
   }
 
-  footer {
+footer {
     position: relative;
   }
+
+/* Footer End */
+
+  /* Quienes somos start */
+.quienessomos {
+  padding: 20px;
+  height: 100%;
+}
+
+.quienessomos__contenedor {
+  max-width: 100%;
+  height: 100%;
+  display: inline;
+  text-align: center;
+  max-height: 100%;
+  margin: 0;
+  padding: 0px 20px;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+/* Quienes somos end */
+/* Donar Start */
+
+
 }
