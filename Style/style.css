@@ -237,9 +237,9 @@ footer {
   display: flex;
   justify-content: center;
 
-  font-size: 12px;
-  font-weight: lighter;
-  margin-top: 15px;
+  font-size: 12px !important;
+  font-weight: lighter !important;
+  padding-bottom: 5px;
 }
 
 .derechosreservados h4 {
@@ -378,14 +378,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
   background-size: cover;
 
   color: white;
   background-color: rgba(0, 0, 0, .2);
-  background-image: url('https://picsum.photos/id/866/1920/1080');
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  background-image: url('https://s1.eestatic.com/2019/10/01/eldigitalcastillalamancha/castilla_la_mancha_433467175_189102568_1024x576.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
   background-attachment: fixed;
+  
 }
 
 .quienessomos__contenedor {
@@ -423,8 +424,23 @@ footer {
   margin-bottom: 20px;
 }
 
+.accordion-item {
+  /* margin: 10px 0px; */
+  /* width: 70%; */
 
-.cards {
+}
+
+.accordion {
+  /* margin: 10px 0px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 20px;
+
+}
+
+.tarjetasproyectos {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -435,7 +451,7 @@ footer {
 
 }
   
-.card {
+.tarjetasproyectos__contenedor {
     margin: 40px 60px;
     position: relative;
     max-width: 250px;
@@ -446,7 +462,7 @@ footer {
 
 
   
-.card-title {
+.tarjetasproyectos__contenedor-title {
     text-align: center;
     color: #fff;
     background-color: #2a3a4b;
@@ -459,7 +475,7 @@ footer {
     font-size: 1rem;
 }
   
-.card img {
+.tarjetasproyectos__contenedor img {
     width: 250px;
     height: 343px;
     object-fit: cover;
@@ -471,7 +487,9 @@ footer {
     box-sizing: border-box;
   }
   
-.card-desc {
+/* Ya venia aplicando transiciones y transformaciones, no creo que haga falta agregar nada adicional para la entrega*/
+
+.tarjetasproyectos__contenedor-desc {
     display: block; 
     font-size: 1.2rem;
     position: absolute;
@@ -484,10 +502,14 @@ footer {
     transition: 0.8s ease;
 }
   
-.card:hover .card-desc {
+.tarjetasproyectos__contenedor:hover .tarjetasproyectos__contenedor-desc {
     opacity: 1;
     height: 100%;
     transform: scale(1.25,1.25);
+}
+
+.carousel {
+  margin: 10px;
 }
 
 .donarcontenedor {
@@ -643,6 +665,7 @@ footer {
   position: absolute;
   top: 50%;
 }
+
 
 @media screen and (max-width: 1025px) {
   .quienessomos__contenedor {
