@@ -425,8 +425,10 @@ footer {
 }
 
 .accordion-item {
-  /* margin: 10px 0px; */
+  /* margin: 10px 0px !important; */
   /* width: 70%; */
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  /* border: 1px solid white !important; */
 
 }
 
@@ -436,8 +438,15 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px 20px;
+  background-color: transparent !important;
+  border: none !important;
 
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
 }
 
 .tarjetasproyectos {
@@ -509,7 +518,7 @@ footer {
 }
 
 .carousel {
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .donarcontenedor {
@@ -557,7 +566,7 @@ footer {
 
 .donarcontentedor__fondo {
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     max-width: 100%;
     margin: 0px 20px;
@@ -596,6 +605,17 @@ footer {
     text-transform: uppercase;
     color: #009cde;
     margin-top: 15px;
+}
+
+/* .tarjetasbootstrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+.card {
+  margin: 0px 20px 30px;
 }
 
 .menuinicio__closeicon {
@@ -666,12 +686,27 @@ footer {
   top: 50%;
 }
 
+.navbar {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
 
 @media screen and (max-width: 1025px) {
   .quienessomos__contenedor {
     margin: 50px 50px 50px;
     
 }
+
+  /* .tarjetasbootstrap{
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 5px 0px;
+  } */
   
 }
 
@@ -719,6 +754,17 @@ footer {
     font-size: 35px;
     margin-right: 15px;
   }
+
+  .menuinicio {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+    background-color: rgb(25, 25, 25) !important;
+  }
+
+ 
 /* header End */
 
 /* Index start */
@@ -836,4 +882,23 @@ footer {
 }
 
 
+}
+
+
+.navbar-toggler.collapsed {
+  transition: 0.3s;
+  transform: rotateZ(180deg);
+}
+
+.navbar-toggler {
+  transform: rotateZ(90deg);
+  transition: 0.3s;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.navbar-dark .navbar-toggler {
+  box-shadow: none !important;
 }
