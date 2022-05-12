@@ -248,18 +248,20 @@ footer {
 
 .subtitulo {
   color: black;
+  margin-top: 5px;
+  font-size: 1.5rem !important;
 }
 
 .moverformulario {
   height: 100%;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin: 60px 10px;
 }
 
 .formulario__wrap {
-  display: flex;
-  overflow: hidden;
+  /* display: flex; */
+  /* overflow: hidden; */
 
   width: 100%;
   max-width: 1050px;
@@ -273,9 +275,9 @@ footer {
 }
 
 .formulario__contenedor {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
   margin-right: 10px;
 
   height: 90%;
@@ -293,15 +295,15 @@ footer {
 }
 
 .formulario__seccion1 {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 
   width: 50%;
   height: 100%;
   padding-top: 20px;
 }
 
-.formulario__campos {
+/* .formulario__campos {
   box-sizing: border-box;
   width: 100%;
   max-width: 375px;
@@ -309,23 +311,34 @@ footer {
   margin: 5px;
   padding-top: 5px;
   padding-left: 5px;
-}
+} */
 
 .formulario__selector {
   width: 100%;
   max-width: 375px;
   height: 100%;
-  margin: 5px;
+  margin: 5px 5px 5px 9px;
   padding-top: 5px;
+  padding-right: 50px;
 }
 
 .formulario__botones {
-  display: flex;
-  justify-content: center;
+  margin: 20px 0;
+}
 
-  width: 100%;
-  max-width: 375px;
-  padding-left: 5px;
+.formulario__botones input {
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 6rem !important;
+}
+
+.formulario__botones input:nth-child(1) {
+  margin-right: 10px;
+}
+
+.formulario__botones input:nth-child(2) {
+  margin-left: 10px;
 }
 
 .formulario__botones--enviar {
@@ -342,7 +355,7 @@ footer {
   transition: .2s;
 }
 
-.formulario__botones--enviar:hover {
+/* .formulario__botones--enviar:hover {
   padding: 0 40px;
 
   background-color: #71B6FF;
@@ -370,7 +383,7 @@ footer {
   background-color: #E47882;
 
   cursor: pointer;
-}
+} */
 
 .quienessomos {
   position: relative;
@@ -731,6 +744,57 @@ footer {
   .donarcontenedor__mercadopago {
     height: 100px;
   }
+
+  /* Contacto start */
+
+  .formulario__seccion1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario__wrap{
+    margin: 60px 20px;
+    background-image: url('https://picsum.photos/seed/picsum/524/600');
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background-size: cover;
+
+  }
+
+  .formulario__contenedor {
+    width: 100%;
+    /* margin-right: 0; */
+    text-align: center;
+  }
+
+  /* .subtitulo {
+    color: white;
+  } */
+
+  .formulario__whitebox{
+    margin: 0px 10px 0 0;
+  }
+
+  .imagenfondocontacto {
+    display: none;
+  }
+
+
+  /* .formulario__botones{
+    width: 100%;
+    max-width: none;
+  } */
+/* contacto End */
+
+.imagecontainer {
+  display: none!important;
+}
+
+.formulario__campos {
+  width: 100% !important;
+}
 }
 
 @media screen and (max-width: 601px) {
@@ -790,39 +854,7 @@ footer {
 
 /* Index End */
 
-/* Contacto start */
 
-  .formulario__seccion1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .formulario__wrap{
-    margin: 60px 20px;
-    background-image: url('https://picsum.photos/seed/picsum/524/600');
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
-    background-size: cover;
-
-  }
-
-  .formulario__contenedor {
-    width: 100%;
-    /* margin-right: 0; */
-    text-align: center;
-  }
-
-  .subtitulo {
-    color: white;
-  }
-
-  .formulario__whitebox{
-    margin: 0px 10px 0 0;
-  }
-
-/* contacto End */
 
 /* Footer Start */
 
@@ -885,12 +917,13 @@ footer {
 }
 
 
-.navbar-toggler.collapsed {
+
+.navbar-toggler.collapsed span {
   transition: 0.3s;
-  transform: rotateZ(180deg);
+  transform: rotateZ(0deg);
 }
 
-.navbar-toggler {
+.navbar-toggler span {
   transform: rotateZ(90deg);
   transition: 0.3s;
 }
@@ -901,4 +934,58 @@ footer {
 
 .navbar-dark .navbar-toggler {
   box-shadow: none !important;
+}
+
+.formwrap {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 5px;
+  padding: 0 !important;
+  margin: 150px 10px;
+}
+
+.formbackground{
+  background-image: url("../images/juntasdir.jpg");
+  height: 500px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.imagecontainer{
+  padding: 0 !important;
+}
+
+.formwrap__margin {
+  margin-left: 0 !important;
+}
+
+.formulario__contacto {
+  width: 100%;
+}
+
+.formulario__contacto input {
+  width: 100%;
+}
+
+.formulario__contacto select {
+  width: 100%;
+  margin-top: 25px;
+  padding: 4px 0px 0px;
+}
+
+/* .kevin:nth-child(1) {
+
+} */
+
+.maincontainter {
+  max-width: 1200px;
+}
+
+.formulario__margin {
+  margin: 0 !important;
 }
