@@ -1,0 +1,76 @@
+.quienessomos {
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+  
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url('https://s1.eestatic.com/2019/10/01/eldigitalcastillalamancha/castilla_la_mancha_433467175_189102568_1024x576.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background-attachment: fixed;
+    
+  }
+  
+  .quienessomos__contenedor {
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 100px 200px 100px;
+    padding: 0px 50px 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .quienessomos__titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    padding: 20px 0;
+  }
+  
+  .quienessomos__titulo h1{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    
+      padding: 20px 0;
+  }
+   
+  .quienessomos__parrafo {
+      padding: 20px 0;
+  }
+  
+  .quienessomos__parrafo h2 {
+    margin-bottom: 20px;
+  }
+  
+  .accordion-item {
+    /* margin: 10px 0px !important; */
+    /* width: 70%; */
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* border: 1px solid white !important; */
+  
+  }
+  
+  .accordion {
+    /* margin: 10px 0px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent !important;
+    border: none !important;
+  
+  }
+  
+  .accordion-button {
+    background-color: transparent !important;
+    color: white !important;
+    border: none !important;
+  }
