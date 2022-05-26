@@ -1,5 +1,9 @@
 .card {
     margin: 0px 20px 30px;
+    &__price{
+        color: #0094db;
+        font-weight: bold;
+    }
   }
   
   .donarcontenedor {
@@ -47,7 +51,6 @@
 
 .donarcontentedor__fondo {
     justify-content: center;
-    /* background-color: white; */
     border-radius: 10px;
     max-width: 100%;
     margin: 0px 20px;
@@ -88,9 +91,7 @@
     margin-top: 15px;
 }
 
-/* .tarjetasbootstrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
+.tarjetasbootstrap {
+  margin: 16px 0px;
+}
+

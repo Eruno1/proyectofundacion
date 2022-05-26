@@ -3,11 +3,6 @@
     align-items: center;
   
     width: 100%;
-    /* min-height: 100vh; */
-    /* margin-top: 150px; */
-    /* background-color: red; */
-  
-    /* background-color: red; */
     background-image: url('../images/fondo.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -19,29 +14,23 @@
   .imagenfondo__bloque {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     width: 100%;
-    /* text-align: center; */
   
     padding: 200px 0px;
   }
   
   .imagenfondo .imagenfondo__titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include fullCenter;
   
     min-height: 8rem;
   
-    font-size: 50px;
+    @include fontSize(50)
   }
   
   .imagenfondo .imagenfondo__texto {
     align-self: center;
   
-    /* width: 50%; */
   
-    /* border: 2px solid red; */
     margin-top: 50px;
     margin-left: 20px;
   
@@ -49,11 +38,8 @@
   }
   
   .imagenfondo__boton {
-    display: flex;
-    align-items: center;
-  
+    @include fullCenter;
     align-self: center;
-    justify-content: center;
   
     width: 250px;
     height: 25px;
