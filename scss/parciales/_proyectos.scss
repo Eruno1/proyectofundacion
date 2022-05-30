@@ -5,61 +5,64 @@
     justify-content: center;
     min-height: 650px;
     align-items: center;
-
+    &__contenedor {
+        margin: 40px 60px;
+        position: relative;
+        max-width: 250px;
+        max-height: 350px;
+        box-shadow: 0 40px 60px -4px black;
+        transition: 2s;
+        &--title {
+            text-align: center;
+            color: #fff;
+            background-color: #2a3a4b;
+            padding: 2%;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        & img {
+            width: 250px;
+            height: 343px;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-sizing: border-box;
+        }
+        &--desc {
+            display: block; 
+            font-size: 1.1rem;
+            position: absolute;
+            height: 0;
+            top: 0;
+            opacity: 0;
+            padding: 18px 8%;
+            background-color: #2a3a4b;
+            overflow-y: scroll;
+            transition: 0.8s ease;
+            color: white;
+        }
+    }
+    
 }
   
-.tarjetasproyectos__contenedor {
-    margin: 40px 60px;
-    position: relative;
-    max-width: 250px;
-    max-height: 350px;
-    box-shadow: 0 40px 60px -4px black;
-    transition: 2s;
-}
-
-
-  
-.tarjetasproyectos__contenedor-title {
-    text-align: center;
-    color: #fff;
-    background-color: #2a3a4b;
-    padding: 2%;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-}
-
 .agua {
     font-size: 1rem;
 }
   
-.tarjetasproyectos__contenedor img {
-    width: 250px;
-    height: 343px;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-
-.tarjetasproyectos__contenedor-desc {
-    display: block; 
-    font-size: 1.2rem;
-    position: absolute;
-    height: 0;
-    top: 0;
-    opacity: 0;
-    padding: 18px 8%;
-    background-color: white;
-    overflow-y: scroll;
-    transition: 0.8s ease;
-}
-  
-.tarjetasproyectos__contenedor:hover .tarjetasproyectos__contenedor-desc {
+.tarjetasproyectos__contenedor:hover .tarjetasproyectos__contenedor--desc {
     opacity: 1;
     height: 100%;
     transform: scale(1.25,1.25);
+}
+
+.tarjetasproyectos__contenedor--desc::-webkit-scrollbar {
+    width: 16px;
+}
+
+.tarjetasproyectos__contenedor--desc::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
 }

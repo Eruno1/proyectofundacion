@@ -13,18 +13,33 @@
 }
 
 @mixin padding($val1,$val2,$val3,$val4) {
-     @if $val1 != null and $val2 == null {
-         padding:($val1 / 16) + rem
+        @if $val1 != null and $val2 == null {
+            padding:($val1 / 16) + rem
         };
-     @if $val1 != null and $val2 != null and $val3 == null{
-         padding:($val1 / 16) + rem,($val2 / 16) + rem
+        @if $val1 != null and $val2 != null and $val3 == null{
+            padding:($val1 / 16) + rem ($val2 / 16) + rem
         };
     @if $val1 != null and $val2 != null and $val3 != null and $val4 == null {
-        padding:($val1 / 16) + rem,($val2 / 16) + rem, ($val3 / 16) + rem
+            padding:($val1 / 16) + rem ($val2 / 16) + rem ($val3 / 16) + rem
         };
     @if $val1 != null and $val2 != null and $val3 != null and $val4 != null {
-        padding:($val1 / 16) + rem,($val2 / 16) + rem, ($val3 / 16) + rem, ($val4 / 16) + rem
+            padding:($val1 / 16) + rem ($val2 / 16) + rem ($val3 / 16) + rem ($val4 / 16) + rem
         };    
+}
+
+@mixin margin($val1,$val2,$val3,$val4) {
+    @if $val1 != null and $val2 == null {
+        margin:($val1 / 16) + rem
+        };
+    @if $val1 != null and $val2 != null and $val3 == null{
+        margin:($val1 / 16) + rem ($val2 / 16) + rem
+        };
+    @if $val1 != null and $val2 != null and $val3 != null and $val4 == null {
+        margin:($val1 / 16) + rem ($val2 / 16) + rem ($val3 / 16) + rem
+        };
+    @if $val1 != null and $val2 != null and $val3 != null and $val4 != null {
+        margin:($val1 / 16) + rem ($val2 / 16) + rem ($val3 / 16) + rem ($val4 / 16) + rem
+        };
 }
 
 

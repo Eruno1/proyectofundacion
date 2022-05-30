@@ -12,86 +12,23 @@
     margin: 100px 20px;
 }
 
-.donarcontenedor__tarjeta {
-    width: 250px;
-    height: 343px;
-    background-color: white;
-    margin: 0px 40px;
-    border-radius: 8px;
-    position: relative;
-    box-sizing: border-box;
-    border: 1px solid #007BFF;
-    align-items: flex-end;
-    box-shadow: 4px 3px 3px grey;
-}
-
-.donarcontenedor__boton {
-    position:absolute;
-    width: 100%;
-    height: 15%;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    background-color:#007BFF ;
-    color: white;
-    text-decoration: none;
-    align-items: center;
-    border: none;
-    text-transform: uppercase;
-}
-
-.donarcontenedor__tarjeta--imagen {
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
-.donarcontentedor__fondo {
-    justify-content: center;
-    border-radius: 10px;
-    max-width: 100%;
-    margin: 0px 20px;
-}
-
-.donarcontenedor__mercadopago {
-    height: 125px;
-    margin: 10px 20px 40px 20px;
-}
-
-.donarcontentedor__contenedortarjeta {
-    display: flex;
-    align-items: flex-end;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-top: 100px;
-}
-
-.contenedormercadopago {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.donarcontenedor__tarjeta--pesos {
-    color: #009cde;
-    align-self: center;
-    margin-top: 30%;
-    font-size: 30px;
-}
-
-.donarcontenedor__tarjeta--texto {
-    align-self: center;
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #009cde;
-    margin-top: 15px;
-}
-
 .tarjetasbootstrap {
   margin: 16px 0px;
 }
 
+.transfcontainer {
+    color: $txtcolwhite;
+    @include margin(20,300,20,300);
+    
+    &__titulo {
+        text-decoration: underline white 1px;
+        max-width: 20.6rem;
+    }
+    &__lista{
+        list-style: none;
+        padding: 0px;
+        & li {
+            padding-bottom: 20px;
+        }
+    }
+}

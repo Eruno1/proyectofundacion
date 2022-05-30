@@ -12,41 +12,36 @@
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     background-attachment: fixed;
     
-  }
-  
-  .quienessomos__contenedor {
-    max-height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 100px 200px 100px;
-    padding: 0px 50px 50px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .quienessomos__titulo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    padding: 20px 0;
-  }
-  
-  .quienessomos__titulo h1{
+    &__contenedor {
+      max-height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 100px 200px 100px;
+      padding: 0px 50px 50px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__titulo {
       display: flex;
       align-items: center;
       flex-direction: column;
     
       padding: 20px 0;
-  }
-   
-  .quienessomos__parrafo {
+      & h1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+        padding: 20px 0;
+    }
+      }
+    &__parrafo {
       padding: 20px 0;
-  }
-  
-  .quienessomos__parrafo h2 {
-    margin-bottom: 20px;
+      & h2 {
+        margin-bottom: 20px;
+      }
+    }  
   }
   
   .accordion-item {

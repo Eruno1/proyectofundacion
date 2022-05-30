@@ -31,46 +31,34 @@
   
     /* Contacto start */
   
-    .formulario__seccion1 {
+  .formwrap__contacto {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .formulario__wrap{
-      margin: 60px 20px;
-      background-image: url('https://picsum.photos/seed/picsum/524/600');
-      background-repeat: no-repeat;
-      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
-      background-size: cover;
-  
-    }
-  
-    .formulario__contenedor {
-      width: 100%;
-      text-align: center;
-    }
-  
-    
-    .formulario__whitebox{
-      margin: 0px 10px 0 0;
-    }
-  
-    .imagenfondocontacto {
-      display: none;
-    }
-  
-  
+      & input{
+        width: 100%;
+      }
+      & select{
+        width: 100%;
+        margin-top: 25px;
+        padding: 4px 0px 0px;
+      }
  
-  
+    }
+  .formwrap_fields{
+      width: 100% !important;
+    }
   .imagecontainer {
     display: none!important;
   }
+// contacto END
+
+// Donar start
+
+.transfcontainer {
+  color: $txtcolwhite;
+  @include margin(20,20,20,20);
   
-  .formulario__campos {
-    width: 100% !important;
-  }
+}
+
   }
   
   @media screen and (max-width: 601px) {

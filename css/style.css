@@ -60,13 +60,6 @@ body {
   text-align: right;
 }
 
-.menuinicio__links li a {
-  align-self: center;
-  margin: 10px;
-  color: white;
-  text-decoration: none;
-}
-
 .menuinicio__links li {
   display: flex;
   height: 100%;
@@ -78,6 +71,13 @@ body {
 
 .menuinicio__links li:hover {
   background-color: rgba(255, 255, 255, 0.356);
+}
+
+.menuinicio__links li a {
+  align-self: center;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 .menuinicio__closeicon {
@@ -190,7 +190,7 @@ footer {
   padding: 200px 0px;
 }
 
-.imagenfondo .imagenfondo__titulo {
+.imagenfondo__titulo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@ footer {
   font-size: 3.125rem;
 }
 
-.imagenfondo .imagenfondo__texto {
+.imagenfondo__texto {
   align-self: center;
   margin-top: 50px;
   margin-left: 20px;
@@ -316,17 +316,13 @@ footer {
   transition: 2s;
 }
 
-.tarjetasproyectos__contenedor-title {
+.tarjetasproyectos__contenedor--title {
   text-align: center;
   color: #fff;
   background-color: #2a3a4b;
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
-}
-
-.agua {
-  font-size: 1rem;
 }
 
 .tarjetasproyectos__contenedor img {
@@ -341,23 +337,37 @@ footer {
   box-sizing: border-box;
 }
 
-.tarjetasproyectos__contenedor-desc {
+.tarjetasproyectos__contenedor--desc {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: absolute;
   height: 0;
   top: 0;
   opacity: 0;
   padding: 18px 8%;
-  background-color: white;
+  background-color: #2a3a4b;
   overflow-y: scroll;
   transition: 0.8s ease;
+  color: white;
 }
 
-.tarjetasproyectos__contenedor:hover .tarjetasproyectos__contenedor-desc {
+.agua {
+  font-size: 1rem;
+}
+
+.tarjetasproyectos__contenedor:hover .tarjetasproyectos__contenedor--desc {
   opacity: 1;
   height: 100%;
   transform: scale(1.25, 1.25);
+}
+
+.tarjetasproyectos__contenedor--desc::-webkit-scrollbar {
+  width: 16px;
+}
+
+.tarjetasproyectos__contenedor--desc::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
 }
 
 .card {
@@ -375,120 +385,38 @@ footer {
   margin: 100px 20px;
 }
 
-.donarcontenedor__tarjeta {
-  width: 250px;
-  height: 343px;
-  background-color: white;
-  margin: 0px 40px;
-  border-radius: 8px;
-  position: relative;
-  box-sizing: border-box;
-  border: 1px solid #007BFF;
-  align-items: flex-end;
-  box-shadow: 4px 3px 3px grey;
-}
-
-.donarcontenedor__boton {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  align-items: center;
-  border: none;
-  text-transform: uppercase;
-}
-
-.donarcontenedor__tarjeta--imagen {
-  border: none;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
-
-.donarcontentedor__fondo {
-  justify-content: center;
-  border-radius: 10px;
-  max-width: 100%;
-  margin: 0px 20px;
-}
-
-.donarcontenedor__mercadopago {
-  height: 125px;
-  margin: 10px 20px 40px 20px;
-}
-
-.donarcontentedor__contenedortarjeta {
-  display: flex;
-  align-items: flex-end;
-  background-color: white;
-  margin-bottom: 20px;
-  margin-top: 100px;
-}
-
-.contenedormercadopago {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.donarcontenedor__tarjeta--pesos {
-  color: #009cde;
-  align-self: center;
-  margin-top: 30%;
-  font-size: 30px;
-}
-
-.donarcontenedor__tarjeta--texto {
-  align-self: center;
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #009cde;
-  margin-top: 15px;
-}
-
 .tarjetasbootstrap {
   margin: 16px 0px;
+}
+
+.transfcontainer {
+  color: white;
+  margin: 1.25rem 18.75rem 1.25rem 18.75rem;
+}
+
+.transfcontainer__titulo {
+  text-decoration: underline white 1px;
+  max-width: 20.6rem;
+}
+
+.transfcontainer__lista {
+  list-style: none;
+  padding: 0px;
+}
+
+.transfcontainer__lista li {
+  padding-bottom: 20px;
 }
 
 .maincontainter {
   max-width: 1200px;
 }
 
-.formulario__margin {
-  margin: 0 !important;
-}
-
-.formwrap__margin {
-  margin-left: 0 !important;
-}
-
-.formulario__contacto {
-  width: 100%;
-}
-
-.formulario__contacto input {
-  width: 100%;
-}
-
-.formulario__contacto select {
-  width: 100%;
-  margin-top: 25px;
-  padding: 4px 0px 0px;
-}
-
 .imagecontainer {
   padding: 0 !important;
 }
 
-.formbackground {
+.imagecontainer__formbackground {
   background-image: url("../images/juntasdir.jpg");
   height: 500px;
   width: 400px;
@@ -508,53 +436,47 @@ footer {
   margin: 150px 10px;
 }
 
-.subtitulo {
-  color: black;
-  margin-top: 5px;
-  font-size: 1.5rem !important;
+.formwrap__margin {
+  margin-left: 0 !important;
 }
 
-.imagenfondocontacto {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  opacity: .3;
-  background-color: black;
-  background-image: url("https://picsum.photos/seed/picsum/524/528");
-}
-
-.formulario__seccion1 {
-  width: 50%;
-  height: 100%;
-  padding-top: 20px;
-}
-
-.formulario__selector {
+.formwrap__contacto {
   width: 100%;
-  max-width: 375px;
-  height: 100%;
-  margin: 5px 5px 5px 9px;
-  padding-top: 5px;
-  padding-right: 50px;
 }
 
-.formulario__botones {
+.formwrap__contacto input {
+  width: 100%;
+}
+
+.formwrap__contacto select {
+  width: 100%;
+  margin-top: 25px;
+  padding: 4px 0px 0px;
+}
+
+.formwrap__botones {
   margin: 20px 0;
 }
 
-.formulario__botones input {
+.formwrap__botones input {
   color: white;
   border: none;
   border-radius: 2px;
   width: 6rem !important;
 }
 
-.formulario__botones input:nth-child(1) {
+.formwrap__botones input:nth-child(1) {
   margin-right: 10px;
 }
 
-.formulario__botones input:nth-child(2) {
+.formwrap__botones input:nth-child(2) {
   margin-left: 10px;
+}
+
+.subtitulo {
+  color: black;
+  margin-top: 5px;
+  font-size: 1.5rem !important;
 }
 
 @media screen and (max-width: 1025px) {
@@ -582,34 +504,26 @@ footer {
     height: 100px;
   }
   /* Contacto start */
-  .formulario__seccion1 {
+  .formwrap__contacto {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .formulario__wrap {
-    margin: 60px 20px;
-    background-image: url("https://picsum.photos/seed/picsum/524/600");
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-    background-size: cover;
-  }
-  .formulario__contenedor {
+  .formwrap__contacto input {
     width: 100%;
-    text-align: center;
   }
-  .formulario__whitebox {
-    margin: 0px 10px 0 0;
+  .formwrap__contacto select {
+    width: 100%;
+    margin-top: 25px;
+    padding: 4px 0px 0px;
   }
-  .imagenfondocontacto {
-    display: none;
+  .formwrap_fields {
+    width: 100% !important;
   }
   .imagecontainer {
     display: none !important;
   }
-  .formulario__campos {
-    width: 100% !important;
+  .transfcontainer {
+    color: white;
+    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
   }
 }
 
