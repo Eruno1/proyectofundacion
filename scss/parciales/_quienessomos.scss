@@ -1,0 +1,69 @@
+.quienessomos {
+    @include fullCenter;
+
+    position: relative;
+  
+    flex-direction: column;
+    background-size: cover;
+  
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url('https://s1.eestatic.com/2019/10/01/eldigitalcastillalamancha/castilla_la_mancha_433467175_189102568_1024x576.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    background-attachment: fixed;
+    
+    &__contenedor {
+      max-height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 100px 200px 100px;
+      padding: 0px 50px 50px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__titulo {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    
+      padding: 20px 0;
+      & h1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+        padding: 20px 0;
+    }
+      }
+    &__parrafo {
+      padding: 20px 0;
+      & h2 {
+        margin-bottom: 20px;
+      }
+    }  
+  }
+  
+  .accordion-item {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  
+  }
+  
+  .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent !important;
+    border: none !important;
+    &__title{
+      @include fontSize(35);
+    }
+
+  }
+  
+  .accordion-button {
+    background-color: transparent !important;
+    color: white !important;
+    border: none !important;
+  }

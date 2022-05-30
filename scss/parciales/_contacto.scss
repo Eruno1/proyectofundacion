@@ -1,0 +1,67 @@
+.maincontainter {
+    max-width: 1200px;
+  }
+
+.imagecontainer {
+    padding: 0 !important;
+
+    &__formbackground{
+      background-image: url("../images/juntasdir.jpg");
+      height: 500px;
+      width: 400px;
+      background-position: center;
+      background-size: cover;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+  
+
+  .formwrap {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 0 !important;
+    margin: 150px 10px;
+
+    &__margin{
+      margin-left: 0 !important;
+    }
+
+    &__contacto {
+      width: 100%;
+      & input{
+        width: 100%;
+      }
+      & select{
+        width: 100%;
+        margin-top: 25px;
+        padding: 4px 0px 0px;
+      }
+    }
+    
+    &__botones{
+      margin: 20px 0;
+      & input {
+        color: white;
+        border: none;
+        border-radius: 2px;
+        width: 6rem !important;
+        &:nth-child(1) {
+          margin-right: 10px;
+        }
+        &:nth-child(2) {
+          margin-left: 10px;
+        }
+      }
+    }
+    
+  }
+
+  .subtitulo {
+    color: black;
+    margin-top: 5px;
+    font-size: 1.5rem !important;
+  }

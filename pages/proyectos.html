@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Fundacion, Proyectos, Argentina, Sin fines de lucro, empresas, proyectos" />
+
     <title>Proyectos</title>
-    <link rel="stylesheet" href="../Style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,54 +40,101 @@
                 
             </ul>
         </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a href="../index.html"
+              ><img
+                src="../images/BAF_Fundacion_Blanco2.png"
+                alt="logobaf"
+                srcset=""
+                class="menuinicio__logo"
+              ></img></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./quienes-somos.html">Quiénes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./donar.html">Donar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <div class="cards">
-            <div class="card">
-                <div class="card-title">Salud</div>
+        <div class="tarjetasproyectos">
+            <div class="tarjetasproyectos__contenedor">
+                <div class="tarjetasproyectos__contenedor--title">Salud</div>
                 <img src="../images/FB Ilustraciones SALUD.png" alt="imagen salud">
-                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus sapiente odio. Quasi mollitia magnam dolorem tenetur qui rerum dicta iure laborum praesentium optio officiis, fugiat labore, nobis nisi similique..</p>
+                <p class="tarjetasproyectos__contenedor--desc">Promovemos la salud integral (física, psíquica y mental) de nuestros niños y adolescentes en situación de vulnerabilidad para que puedan desarrollarse y desplegar todas sus potencialidades. La prevención precoz de enfermedades, el tratamiento oportuno y la promoción de hábitos saludables son acciones que buscan proteger y recuperar la salud de nuestra infancia en pos de sociedades más vitales.</p>
             </div>
-            <div class="card">
-                <div class="card-title">Promoción</div>
+            <div class="tarjetasproyectos__contenedor">
+                <div class="tarjetasproyectos__contenedor--title">Promoción</div>
                 <img src="../images/FB Ilustraciones PROMOCION.png" alt="imagen Promoción">
-                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi sint temporibus quas exercitationem animi tempora vero beatae odit, debitis molestiae aliquid est ea atque facilis reprehenderit! Est, delectus? Pariatur.</p>
+                <p class="tarjetasproyectos__contenedor--desc">Creemos que el fortalecimiento de nuestra niñez y adolescencia, a través de acciones que propicien mayor acceso a la educación, de programas de prevención y cuidado de la salud, como así también de la protección del medio ambiente; se refleja en una mejor sociedad para todos, respetuosa de la diversidad y promotora de la igualdad de oportunidades y de las posibilidades de inclusión. En Fundación BAF trabajamos para que los niños y sus familias puedan enfrentar el presente y el futuro con mejores oportunidades.</p>
             </div>
-            <div class="card">
-                <div class="card-title">Educación</div>
+            <div class="tarjetasproyectos__contenedor">
+                <div class="tarjetasproyectos__contenedor--title">Educación</div>
                 <img src="../images/FB Ilustraciones EDUCACION.png" alt="imagen educación">
-                <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusamus debitis temporibus voluptatem laboriosam corporis? At quia tempore omnis molestiae vitae magnam harum consequatur, vel perferendis delectus temporibus esse dicta..</p>
+                <p class="tarjetasproyectos__contenedor--desc">En el desarrollo de nuestros proyectos aspiramos a marcar una diferencia en la vida de niños y adolescentes en situación de riesgo, contribuyendo a mejorar sus oportunidades educativas, posibilidades de nuevos vínculos y experiencias enriquecedoras.</p>
             </div>
-            <div class="card">
-                <div class="card-title agua">Agua y medio ambiente</div>
+            <div class="tarjetasproyectos__contenedor">
+                <div class="tarjetasproyectos__contenedor--title agua">Agua y medio ambiente</div>
                 <img src="../images/FB Ilustraciones AGUA.png" alt="imagen agua">
-                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis obcaecati a eius corporis molestias, repellendus quisquam quo. Quidem, vitae. Doloribus, perferendis laborum tempore at nihil tenetur porro vel pariatur molestias..</p>
+                <p class="tarjetasproyectos__contenedor--desc">Trabajamos para que todos aprendamos a cuidar nuestro hogar. La educación a nuestros niños y jóvenes en el cuidado y preservación del medio ambiente, intenta garantizar que la huella que dejamos en el planeta sea saludable y beneficiosa para todos.</p>
             </div>
         </div>
-        <div class="grid">
-            <div class="grid__hijo hijo1">
-                <img src="https://picsum.photos/seed/picsum/1300/250" alt="gridhijo1">
-                <i class="arrow right"></i>
-                <i class="arrow left"></i>
+        <div id="carouselExampleIndicators" class="carousel slide w-70" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="grid__hijo hijo2">
-                <img src="https://picsum.photos/500/250?grayscale" alt="gridhijo2">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/seed/picsum/1300/250" class="d-block w-100" alt="fotocarrousel1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1300/250?grayscale" class="d-block w-100" alt="fotocarrousel2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1300/250" class="d-block w-100" alt="fotocarrousel3">
+              </div>
             </div>
-            <div class="grid__hijo hijo3">
-                <img src="https://picsum.photos/500/250/?blur" alt="gridhijo3">
-            </div>
-            <div class="grid__hijo hijo4">
-                <img src="https://picsum.photos/id/237/500/250" alt="gridhijo4">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
     <footer>
         <div class="informacionfooter">
-            <div class="informacionfooter__direccion"><h4>Juana Manso 999,
+            <div class="informacionfooter__direccion"><div>Juana Manso 999,
             4to. Piso -Torre Norte,
-            C.A.B.A. - Argentina</h4>
+            C.A.B.A. - Argentina</div>
             </div>
-            <div class="informacionfooter_logo">
+            <div class="informacionfooter__logo">
             <img src="../images/BAF_Fundacion_Blanco2.png" alt="logobaf" class="logo">
             </div>
             <div class="informacionfooter__redes">
@@ -94,8 +144,9 @@
             </div>
         </div>
         <div class="derechosreservados">
-            <h4>© 2022 Fundacón BAF, Todos los derechos reservados</h4>
+            <div>© 2022 Fundacón BAF, Todos los derechos reservados</div>
         </div>   
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+.card {
+    margin: 0px 20px 30px;
+    &__price{
+        color: #0094db;
+        font-weight: bold;
+    }
+  }
+  
+  .donarcontenedor {
+    display: flex;
+    justify-content: center;
+    margin: 100px 20px;
+}
+
+.tarjetasbootstrap {
+  margin: 16px 0px;
+}
+
+.transfcontainer {
+    color: $txtcolwhite;
+    @include margin(20,300,20,300);
+    
+    &__titulo {
+        text-decoration: underline white 1px;
+        max-width: 20.6rem;
+    }
+    &__lista{
+        list-style: none;
+        padding: 0px;
+        & li {
+            padding-bottom: 20px;
+        }
+    }
+}

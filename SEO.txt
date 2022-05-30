@@ -1,0 +1,8 @@
+Acciones para el SEO
+
+1-Cambio de títulos
+2-Se agregó los keywords
+3-Se agregó description
+4-Se modificaron los textos genericos que decían lorem
+5-Se ajustó el F.A.Q
+6-Se eliminaron todos las líneas de código que estaban comentadas
