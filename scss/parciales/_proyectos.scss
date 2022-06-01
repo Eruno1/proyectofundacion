@@ -66,3 +66,9 @@
     background-color: white;
     border-radius: 10px;
 }
+
+.imgcarousel img {
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
