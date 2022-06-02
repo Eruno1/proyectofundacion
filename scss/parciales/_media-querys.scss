@@ -56,7 +56,7 @@
 .transfcontainer {
   color: $txtcolwhite;
   @include margin(20,20,20,20);
-  
+  padding: 0;
 }
 
   }
@@ -163,6 +163,10 @@
   
   .imgcarousel img {
     min-height: 250px;
+}
+
+.transfcontainer {
+  margin: 5px;
 }
 
   }
