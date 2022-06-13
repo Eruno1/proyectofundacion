@@ -361,15 +361,23 @@ footer {
 
 .transfcontainer {
   color: white;
-  max-width: 945px; }
+  max-width: 945px;
+  background-color: #2a3a4b;
+  padding: 50px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
   .transfcontainer__titulo {
-    text-decoration: underline white 1px;
-    max-width: 20.6rem; }
+    border-bottom: 1px solid white;
+    max-width: max-content; }
   .transfcontainer__lista {
     list-style: none;
     padding: 0px; }
     .transfcontainer__lista li {
       padding-bottom: 20px; }
+  .transfcontainer__subtitulo {
+    max-width: max-content;
+    border-bottom: 1px solid white; }
 
 .maincontainter {
   max-width: 1200px; }
