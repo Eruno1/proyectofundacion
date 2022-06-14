@@ -363,21 +363,25 @@ footer {
   color: white;
   max-width: 945px;
   background-color: #2a3a4b;
-  padding: 50px;
+  width: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
   .transfcontainer__titulo {
     border-bottom: 1px solid white;
-    max-width: max-content; }
+    max-width: max-content;
+    margin-top: 10px; }
   .transfcontainer__lista {
     list-style: none;
     padding: 0px; }
     .transfcontainer__lista li {
-      padding-bottom: 20px; }
+      padding: 20px 0px 20px 0px; }
   .transfcontainer__subtitulo {
     max-width: max-content;
     border-bottom: 1px solid white; }
+
+.clase {
+  margin: 20px; }
 
 .maincontainter {
   max-width: 1200px; }
@@ -430,7 +434,10 @@ footer {
 
 @media screen and (max-width: 1025px) {
   .quienessomos__contenedor {
-    margin: 50px 50px 50px; } }
+    margin: 50px 50px 50px; }
+  .transfcontainer {
+    width: auto;
+    margin: 0 1rem 2rem; } }
 
 @media screen and (max-width: 901px) {
   .donarcontentedor__contenedortarjeta {
