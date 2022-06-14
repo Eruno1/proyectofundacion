@@ -94,23 +94,29 @@
     color: $txtcolwhite;
     max-width: 945px;
     background-color: #2a3a4b;    
-    padding: 50px;
+    width: auto;
     border-radius: 1rem;
     margin-bottom: 2rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     &__titulo {
         border-bottom: 1px solid white;
         max-width: max-content;
+        margin-top: 10px;
     }
     &__lista{
         list-style: none;
         padding: 0px;
         & li {
-            padding-bottom: 20px;
+            padding: 20px 0px 20px 0px;
         }
     }
     &__subtitulo {
         max-width: max-content;
         border-bottom: 1px solid white;
     }
+}
+
+.clase {
+    margin: 20px;
+    // padding: 50px;
 }
